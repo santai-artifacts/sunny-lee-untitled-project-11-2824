@@ -1,0 +1,58 @@
+2048 — RULES
+============
+
+GOAL
+----
+Combine numbered tiles by sliding them together until you create a tile
+with the value 2048. You can keep playing after that to reach even higher
+tiles and a bigger score.
+
+THE BOARD
+---------
+- The board is a 4 x 4 grid.
+- The game starts with two tiles, each showing a 2 or a 4.
+
+MAKING A MOVE
+-------------
+- On each move, every tile slides as far as it can in the direction you
+  choose: up, down, left, or right.
+- All tiles move at the same time.
+- After every move, one new tile appears in a random empty cell. It is a
+  2 most of the time, and occasionally a 4.
+
+MERGING TILES
+-------------
+- When two tiles with the SAME number collide, they merge into a single
+  tile worth double the value (2 + 2 = 4, 4 + 4 = 8, and so on).
+- A tile can only merge once per move. Three matching tiles in a row will
+  merge the pair furthest in the direction of travel, leaving the third.
+- The value of each new merged tile is added to your score.
+
+WINNING
+-------
+- You win the moment a 2048 tile is created.
+- You may choose "Keep going" to continue building larger tiles and a
+  higher score.
+
+GAME OVER
+---------
+- The game ends when the board is full AND there are no adjacent tiles
+  with matching values left to merge (no possible moves remain).
+
+CONTROLS
+--------
+- Arrow keys .......... move tiles
+- W / A / S / D ....... move tiles
+- H / J / K / L ....... move tiles (vim style)
+- Swipe .............. move tiles on touch devices
+- "New Game" button .. restart at any time
+
+SCORING
+-------
+- Your score increases by the value of each tile produced by a merge.
+- "Best" tracks your highest score and is saved between sessions.
+
+TIP
+---
+Pick a corner and keep your largest tile there. Build your tiles in order
+along one edge and avoid spreading big tiles across the board.
